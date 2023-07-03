@@ -12,8 +12,8 @@ services:
         ipv4_address: 10.2.0.200
 
   wg_dashboard:
-    #image: noxcis/wg-dashboard:latest
-    image: donaldzou/wgdashboard:v3.1-dev
+    image: noxcis/wg-dashboard:latest
+    #image: donaldzou/wgdashboard:v3.1-dev
     depends_on: [unbound, adguardhome]
     container_name: dwg-dash
     restart: unless-stopped 
